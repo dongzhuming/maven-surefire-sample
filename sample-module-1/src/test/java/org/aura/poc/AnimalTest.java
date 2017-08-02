@@ -14,7 +14,7 @@ public class AnimalTest {
     }
     @Test
     public void testCannotFly() {
-        assertTrue(new Animal("dog").canFly());
-        assertTrue(new Animal("cat").canFly());
+        assertFalse(new Animal("dog").canFly());
+        assertFalse(new Animal("cat").canFly());
     }
 }
